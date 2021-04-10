@@ -1,0 +1,7 @@
+#foot_name {
+  color: grey;
+}
+
+#foot_name:hover {
+  color: rgb(68, 68, 68);
+}
