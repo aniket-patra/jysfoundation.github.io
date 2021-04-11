@@ -74,7 +74,7 @@
     ></script>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/index.html">
           <img
@@ -164,7 +164,7 @@
       <!---------------------------------Carousel Begins---------------------------------->
       <div
         id="carouselExampleIndicators"
-        class="carousel slide"
+        class="carousel slide rounded"
         data-ride="carousel"
         style="background-color: grey"
       >
@@ -237,6 +237,71 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <!-----------------------------------------------------------NEWs Group---------------------------------------->
+      <div class="row align-items-center">
+        <div class="col-sm-4 pt-5">
+          <div class="card" style="width: 18rem">
+            <button
+              class="btn card-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapse1"
+            >
+              News
+            </button>
+            <div class="collapse" id="collapse1">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Contact Page is
+                  <span class="badge badge-danger">Live</span>
+                </li>
+                <li class="list-group-item">- - -</li>
+                <li class="list-group-item">- - -</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 pt-5">
+          <div class="card" style="width: 18rem">
+            <button
+              class="btn card-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapse2"
+            >
+              Announcements
+            </button>
+            <div class="collapse" id="collapse2">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pt-5">
+          <div class="card" style="width: 18rem">
+            <button
+              class="btn card-header"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapse3"
+            >
+              Media
+            </button>
+            <div class="collapse" id="collapse3">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-----------------------------------------------------------Articles---------------------------------------------->
       <div class="jumbotron mt-5">
         <div class="row">
           <div class="col-sm-6">
@@ -273,7 +338,7 @@
 
       <div class="jumbotron mt-5">
         <div class="row">
-          <div class="col-sm-6 order-sm-last align-self-center">
+          <div class="col-sm-6 order-sm-last text-right">
             <img src="/assets/images/dummy.png" alt="" class="img-fluid" />
           </div>
           <div class="col-sm-6 text-justify order-sm-first">
@@ -307,7 +372,7 @@
 
       <footer>
         <p style="text-align: center">
-          <i class="far fa-copyright"></i> 2021 JYS Foundation. Made in
+          <i class="far fa-copyright"></i> 2021 JYS Foundation | Made in
           <img
             src="https://aniket-patra.github.io/assets/india-16x16.png"
             alt="India Logo"
@@ -319,7 +384,7 @@
             href="https://aniket-patra.github.io/"
             target="_blank"
             id="foot_name"
-            >Aniket Patra.
+            >Aniket Patra
           </a>
         </p>
       </footer>

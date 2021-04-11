@@ -51,7 +51,7 @@
       content="https://jysfoundation.github.io/assets/images/media_share.png"
     />
 
-    <title>JYS Foundation</title>
+    <title>Contact | JYS Foundation</title>
 
     <!--For Bootstrap 4-->
     <link
@@ -62,7 +62,7 @@
     />
 
     <!--Page CSS-->
-    <link rel="stylesheet" href="/assets/main.css" />
+    <link rel="stylesheet" href="/assets/contactUs/main.css" />
 
     <!--Page Icon-->
     <link rel="icon" type="image/png" href="assets/images/icon.png" />
@@ -74,7 +74,7 @@
     ></script>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/index.html">JYS Foundation</a>
         <button
@@ -149,7 +149,111 @@
         </form>-->
         </div>
       </nav>
-      <h1>Coming Soon</h1>
+      <h1 class="pt-2">Contact Us</h1>
+
+      <form
+        class="pt-3 card-body"
+        action="https://submit-form.com/YiqRMeJ5"
+        accept-charset="UTF-8"
+        method="POST"
+        data-botpoison-public-key="pk_1d67d912-da16-48fc-8cc2-5e2061492169"
+      >
+        <div class="form-row">
+          <div class="col">
+            <label for="form_name">Name</label>
+            <input
+              type="text"
+              id="form_name"
+              name="name"
+              class="form-control"
+              placeholder="Your name"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail1">Email address</label>
+          <input
+            type="email"
+            name="mail"
+            class="form-control"
+            id="inputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="3"
+            placeholder="And your message please"
+            required
+          ></textarea>
+        </div>
+
+        <!--Simple Spam protection
+          <input
+          type="checkbox"
+          name="_honeypot"
+          style="display: none"
+          tabindex="-1"
+          autocomplete="off"
+        />-->
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://aniket-patra.github.io/thanks.html"
+        />
+        <input type="hidden" id="nameFiller" name="_email.from" />
+        <input type="hidden" id="subjectSetter" name="_email.subject" />
+        <input
+          onclick="nameCopy()"
+          type="submit"
+          class="btn btn-outline-secondary"
+        />
+        <input type="reset" class="btn btn-outline-danger" />
+      </form>
+
+      <h3 class="pt-5">Find us on Google Map</h3>
+      <div class="row pt-3">
+        <div class="col embed-responsive embed-responsive-16by9">
+          <iframe
+            lass="embed-responsive-item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.3046276536734!2d88.28288200014217!3d22.59158404826854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x30cd5d3cf9ebe585!2sJ.Y.S.%20Foundation!5e0!3m2!1sen!2sin!4v1618116625530!5m2!1sen!2sin"
+            width="300"
+            height="225"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      <!--------------------------------------FOOTER----------------------------------------->
+      <footer class="pt-4">
+        <p style="text-align: center">
+          <i class="far fa-copyright"></i> 2021 J.Y.S. Foundation | Made in
+          <img
+            src="https://aniket-patra.github.io/assets/india-16x16.png"
+            alt="India Logo"
+            height="16"
+            width="16"
+          />
+          India by
+          <a
+            href="https://aniket-patra.github.io/"
+            target="_blank"
+            id="foot_name"
+            >Aniket Patra
+          </a>
+        </p>
+      </footer>
     </div>
 
     <!--For Bootstrap 4-->
@@ -165,6 +269,8 @@
     ></script>
 
     <!--Page JS-->
-    <script src="/assets/script.js"></script>
+    <script src="/assets/contactUs/script.js"></script>
+
+    <script src="https://unpkg.com/@botpoison/browser"></script>
   </body>
 </html>
