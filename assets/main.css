@@ -5,3 +5,12 @@
 #foot_name:hover {
   color: rgb(68, 68, 68);
 }
+
+a {
+  text-decoration: none !important;
+  color: gray;
+}
+
+a:hover {
+  color: black;
+}
