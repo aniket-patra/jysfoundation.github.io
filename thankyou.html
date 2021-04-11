@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+
+    <!--Update this for shortest possible description-->
+    <meta
+      name="description"
+      content="Learn swimming, rowing and much more by acclaimed explorer Mr. Puspen Samanta"
+    />
+
+    <!--This part is to give credit to the person who developed the site-->
+    <meta name="author" content="Aniket Patra" />
+
+    <!--og tags are for open graph-->
+    <meta property="og:title" content="J.Y.S. Foundation" />
+    <meta property="og:url" content="https://jysfoundation.github.io/" />
+    <meta
+      property="og:image"
+      content="https://jysfoundation.github.io/assets/images/media_share.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="JYS Foundation Logo" />
+
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:description"
+      content="Learn swimming, rowing and much more by acclaimed explorer Mr. Puspen Samanta"
+    />
+
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!---------------TWITTER CRDS------------------------>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="J.Y.S. Foundation" />
+    <meta
+      name="twitter:description"
+      content="Learn swimming, rowing and much more by acclaimed explorer Mr. Puspen Samanta"
+    />
+    <meta name="twitter:url" content="https://jysfoundation.github.io/" />
+    <meta
+      name="twitter:image"
+      content="https://jysfoundation.github.io/assets/images/media_share.png"
+    />
+
+    <title>Thank You | J.Y.S. Foundation</title>
+
+    <!--For Bootstrap 4-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!--Page Icon-->
+    <link rel="icon" type="image/png" href="assets/images/icon.png" />
+
+    <!--Font Awesome 5-->
+    <script
+      src="https://kit.fontawesome.com/2da650b498.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Page CSS-->
+    <style>
+      #foot_name {
+        color: grey;
+      }
+
+      #foot_name:hover {
+        color: rgb(68, 68, 68);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container pt-5">
+      <p
+        style="font-size: calc(60px + 0.5vw); text-align: center"
+        id="headEdit"
+      ></p>
+
+      <h2 style="font-size: calc(20px + 0.5vw); text-align: center">
+        We have got your message. We will contact you soon.
+      </h2>
+      <h2 style="font-size: calc(60px + 0.5vw); text-align: center">
+        <i class="fas fa-smile-beam pt-5"></i>
+      </h2>
+      <br />
+      <footer style="position: fixed; left: 0; bottom: 0; width: 100%">
+        <p style="text-align: center">
+          <i class="far fa-copyright"></i> 2021 J.Y.S. Foundation | Made in
+          <img
+            src="https://aniket-patra.github.io/assets/india-16x16.png"
+            alt="India Logo"
+            height="16"
+            width="16"
+          />
+          India by
+          <a
+            href="https://aniket-patra.github.io/"
+            target="_blank"
+            id="foot_name"
+            >Aniket Patra
+          </a>
+        </p>
+      </footer>
+    </div>
+
+    <!--For Bootstrap 4-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var nameVar = localStorage.getItem("userName");
+      if (nameVar == null) {
+        nameVar = "";
+      }
+      document.getElementById("headEdit").innerHTML = "Thank You " + nameVar;
+      localStorage.clear();
+    </script>
+  </body>
+</html>
