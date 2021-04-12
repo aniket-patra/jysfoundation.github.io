@@ -7,9 +7,17 @@
 		
 		$(".collapse").collapse('show');
 	}
-  }
+  };
   
-  var x = window.matchMedia("(max-width: 576px)")
-  myFunction(x) // Call listener function at run time
+  var x;
+  
+  window.addEventListener("load",function(){
+	x = window.matchMedia("(max-width: 576px)");
+	myFunction(x);	 
+  });
 
 
+  window.addEventListener("resize",function(){
+	x = window.matchMedia("(max-width: 576px)");
+	myFunction(x);	 
+  });

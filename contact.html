@@ -72,9 +72,26 @@
       src="https://kit.fontawesome.com/2da650b498.js"
       crossorigin="anonymous"
     ></script>
+    <!--------------BOTPOISON------------>
+    <script src="https://unpkg.com/@botpoison/browser"></script>
+
+    <!--------------intl-tel-input---------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css"
+      integrity="sha512-yye/u0ehQsrVrfSd6biT17t39Rg9kNc+vENcCXZuMz2a+LWFGvXUnYuWUW6pbfYj1jcBb/C39UZw2ciQvwDDvg=="
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"
+      integrity="sha512-OnkjbJ4TwPpgSmjXACCb5J4cJwi880VRe+vWpPDlr8M38/L3slN5uUAeOeWU2jN+4vN0gImCXFGdJmc0wO4Mig=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
+      <!------------------------------------------------------------Navigation------------------------------->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/index.html"
           ><img
@@ -165,7 +182,6 @@
         action="https://submit-form.com/YiqRMeJ5"
         accept-charset="UTF-8"
         data-botpoison-public-key="pk_1d67d912-da16-48fc-8cc2-5e2061492169"
-        target="_blank"
         method="POST"
       >
         <div class="form-row">
@@ -174,7 +190,7 @@
             <input
               type="text"
               id="form_name"
-              name="name"
+              name="Name"
               class="form-control"
               placeholder="Your name"
               required
@@ -185,7 +201,7 @@
           <label for="inputEmail1">Email address </label>
           <input
             type="email"
-            name="mail"
+            name="Mail"
             class="form-control"
             id="inputEmail1"
             placeholder="Your email"
@@ -193,11 +209,23 @@
             required
           />
 
+          <label for="inputPhone">Phone </label><br />
+          <input
+            id="phone"
+            type="tel"
+            name="Phone"
+            class="form-control"
+            id="inputPhone"
+            required
+          />
+
+          <br />
+
           <label for="message">Message </label>
           <textarea
             class="form-control"
             id="message"
-            name="message"
+            name="Message"
             maxlength="140"
             rows="3"
             placeholder="And your message :)"
@@ -229,10 +257,12 @@
         <input type="reset" class="btn btn-outline-danger" />
       </form>
 
-      <h3 class="pt-5">
+      <!-----------------------------------------------------MAP------------------------------------------------------->
+
+      <h3 class="pt-sm-5 pt-4">
         Find us on Google Map <i class="fas fa-map-marked-alt"></i>
       </h3>
-      <div class="row pt-3">
+      <div class="row pt-3 ml-sm-0 ml-1 mr-sm-0 mr-1">
         <div class="col embed-responsive embed-responsive-16by9">
           <iframe
             lass="embed-responsive-item"
@@ -281,7 +311,5 @@
 
     <!--Page JS-->
     <script src="/assets/contactUs/script.js"></script>
-
-    <script src="https://unpkg.com/@botpoison/browser"></script>
   </body>
 </html>
