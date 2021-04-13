@@ -178,6 +178,7 @@
       <h3 class="pt-2">Contact Us <i class="fas fa-address-book"></i></h3>
 
       <form
+        id="form"
         class="pt-3 card-body"
         action="https://submit-form.com/YiqRMeJ5"
         accept-charset="UTF-8"
@@ -248,16 +249,24 @@
         <input type="hidden" id="subjectSetter" name="_email.subject" />
         <input type="hidden" name="_append" value="false" />
         <input
+          id="submit"
           onclick="nameCopy()"
           type="submit"
           class="btn btn-outline-secondary"
         />
-        <input type="reset" class="btn btn-outline-danger" />
+
+        <input type="reset" class="btn btn-outline-danger" /> <br /><br />
+        <div
+          id="spinnerSubmit"
+          class="spinner-border text-secondary ml-4"
+          role="status"
+          style="visibility: hidden"
+        ></div>
       </form>
 
       <!-----------------------------------------------------MAP------------------------------------------------------->
 
-      <h3 class="pt-sm-5 pt-4">
+      <h3 class="pt-sm-2 pt-2">
         Find us on Google Map <i class="fas fa-map-marked-alt"></i>
       </h3>
       <div class="row pt-3 ml-sm-0 ml-1 mr-sm-0 mr-1">
