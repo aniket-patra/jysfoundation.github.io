@@ -74,13 +74,13 @@
     ></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/index.html">
           <img
             src="/assets/images/icon.png"
-            width="30"
-            height="30"
+            width="40"
+            height="40"
             class="d-inline-block align-top"
             alt=""
           />
@@ -166,7 +166,7 @@
         id="carouselExampleIndicators"
         class="carousel slide rounded"
         data-ride="carousel"
-        style="background-color: grey"
+        style="background-color: rgb(199, 197, 197)"
       >
         <ol class="carousel-indicators">
           <li
@@ -182,9 +182,7 @@
             <img
               class="img-fluid"
               src="/assets/images/governr_andaman.JPG"
-              alt="First slide"
-              height="400px"
-              width="600px"
+              alt="Andaman Expedition 2013. With the governor of W.B."
             />
             <div class="carousel-caption d-none d-md-block">
               <h5>With Governor</h5>
@@ -195,9 +193,7 @@
             <img
               class="img-fluid"
               src="/assets/images/kayak_expdtn.JPG"
-              alt="Second slide"
-              height="400px"
-              width="600px"
+              alt="First time Kayak expidition in India (Eastern Zone)"
             />
             <div class="carousel-caption d-none d-md-block">
               <h5>Kayak Expidition</h5>
@@ -208,9 +204,7 @@
             <img
               class="img-fluid"
               src="/assets/images/vizag_Chennai.JPG"
-              alt="Third slide"
-              height="400px"
-              width="600px"
+              alt="Vizag to Chennai rowing and sailing expedition 2010"
             />
             <div class="carousel-caption d-none d-md-block">
               <h5>Vizag to Chennai</h5>
@@ -238,31 +232,7 @@
         </a>
       </div>
       <!-----------------------------------------------------------NEWs Group---------------------------------------->
-      <div class="row align-items-center">
-        <div class="col-sm-4 pt-sm-4 pt-3">
-          <div class="card" style="width: auto">
-            <button
-              class="btn card-header"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapse1"
-            >
-              News <i class="fas fa-chevron-down"></i>
-              <span class="badge-pill badge-danger">New</span>
-            </button>
-            <div class="collapse" id="collapse1">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <a href="/contact.html">Contact Page</a> is
-                  <span class="badge badge-primary">Live</span>
-                </li>
-                <li class="list-group-item">- - -</li>
-                <li class="list-group-item">- - -</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+      <div class="row justify-content-center">
         <div class="col-sm-4 pt-sm-4 pt-3">
           <div class="card" style="width: auto">
             <button
@@ -274,69 +244,116 @@
               Announcements <i class="fas fa-chevron-down"></i>
               <span class="badge-pill badge-danger">New</span>
             </button>
-            <div class="collapse" id="collapse2">
+            <div
+              class="collapse overflow-auto"
+              id="collapse2"
+              style="width: auto; max-height: 200px"
+            >
               <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Swimming Classes Ongoing<span class="badge badge-danger"
+                    >NEW</span
+                  >
+                </li>
                 <li class="list-group-item">
                   Page is under construction
                   <span class="badge badge-primary">Alert</span>
                 </li>
+                <li class="list-group-item">
+                  <a href="/contact.html">Contact Page</a> is
+                  <span class="badge badge-primary">Live</span>
+                </li>
+                <!--<li class="list-group-item">- - -</li>
                 <li class="list-group-item">- - -</li>
-                <li class="list-group-item">- - -</li>
+                <li class="list-group-item">- - -</li>-->
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 pt-sm-4 pt-3">
-          <div class="card" style="width: auto">
-            <button
-              class="btn card-header"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapse3"
-            >
-              Media <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="collapse" id="collapse3">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
+        <div class="col-sm-4 mt-sm-4 mt-3">
+          <div class="card">
+            <div class="card-header">Motivation</div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  Swimming is a confusing sport, because sometimes you do it for
+                  fun, and other times you do it to not die. And when I'm
+                  swimming, sometimes I'm not sure which one it is.
+                </p>
+                <footer class="blockquote-footer">Demetri Martin</footer>
+              </blockquote>
             </div>
           </div>
         </div>
       </div>
       <!-----------------------------------------------------------Articles---------------------------------------------->
-      <div class="jumbotron mt-4 mt-sm-5">
-        <div class="row">
-          <div class="col-sm-6">
-            <img src="/assets/images/dummy.png" alt="" class="img-fluid" />
+      <div class="row jumbotron mt-4 mt-sm-5 justify-content-center">
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="/assets/images/dummy.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-          <div class="col-sm-6 text-justify">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Montes
-              nascetur ridiculus mus mauris vitae. Egestas purus viverra
-              accumsan in nisl nisi scelerisque eu ultrices. Maecenas pharetra
-              convallis posuere morbi leo urna molestie at. Eget mauris pharetra
-              et ultrices neque ornare aenean. Vitae sapien pellentesque
-              habitant morbi tristique senectus et netus et. Netus et malesuada
-              fames ac. Pellentesque eu tincidunt tortor aliquam nulla facilisi
-              cras fermentum. A diam maecenas sed enim ut sem viverra aliquet
-              eget. Et ligula ullamcorper malesuada proin libero nunc consequat
-              interdum. Vitae congue mauris rhoncus aenean vel elit scelerisque.
-              Viverra maecenas accumsan lacus vel facilisis. Sed velit dignissim
-              sodales ut eu sem integer vitae justo. Dictum non consectetur a
-              erat nam at. Rutrum quisque non tellus orci ac auctor augue
-              mauris. Urna neque viverra justo nec ultrices. Tellus integer
-              feugiat scelerisque varius morbi enim. Posuere morbi leo urna
-              molestie at elementum eu facilisis. Varius sit amet mattis
-              vulputate enim. Quam quisque id diam vel quam. Sed viverra tellus
-              in hac habitasse platea. Quis blandit turpis cursus in hac
-              habitasse platea dictumst. Est pellentesque elit ullamcorper
-              dignissim cras tincidunt lobortis feugiat vivamus. Mattis
-              ullamcorper velit sed ullamcorper.
-            </p>
+        </div>
+        <div class="col pt-sm-0 pt-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="/assets/images/dummy.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col pt-sm-0 pt-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="/assets/images/dummy.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col pt-sm-0 pt-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="/assets/images/dummy.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
         </div>
       </div>
@@ -383,6 +400,7 @@
             alt="India Logo"
             height="16"
             width="16"
+            title="India"
           />
           India by
           <a href="https://aniket-patra.github.io/" target="_blank"
