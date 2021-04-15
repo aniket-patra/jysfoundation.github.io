@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"); /*For headings*/
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap"); /*Card headings*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap"); /*Card texts*/
 a {
   text-decoration: none !important;
   color: gray;
@@ -8,7 +11,36 @@ a:hover {
   color: black;
 }
 
+.carousel-caption h5 {
+  font-size: calc(10px + 0.5vw);
+}
+
+.carousel-caption p {
+  font-size: calc(8px + 0.5vw);
+}
+
+.subHeads {
+  font-size: calc(35px + 0.5vw);
+  font-family: "Nunito", sans-serif;
+}
+
+.card-title {
+  font-family: "Questrial", sans-serif;
+}
+
+.card-text,
+.list-group-item {
+  font-family: "Noto Sans SC", sans-serif;
+}
+
 /*----------------VIDEO CARAOUSEL BEGINS-------------------*/
+.stick {
+  width: 11rem;
+  margin: 0px;
+  border: none;
+  height: 6px;
+  background: rgb(155, 153, 153);
+}
 
 .carousel {
   background: #eee;
@@ -35,6 +67,9 @@ a:hover {
 }
 .img2 {
   background-image: url("/assets/images/imgVideoThumb2.jpg") !important;
+}
+.img3 {
+  background-image: url("/assets/images/imgVideoThumb3.jpg") !important;
 }
 
 #play {
