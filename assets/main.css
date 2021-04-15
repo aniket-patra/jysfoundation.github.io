@@ -8,6 +8,63 @@ a:hover {
   color: black;
 }
 
+/*----------------VIDEO CARAOUSEL BEGINS-------------------*/
+
+.carousel {
+  background: #eee;
+}
+
+.carousel-cell {
+  width: 20rem;
+  height: 200px;
+  margin-right: 10px;
+  background: #ed2;
+  border-radius: 5px;
+  position: relative;
+  opacity: 0.5;
+  transition: 0.3s ease;
+  background-color: greenyellow;
+}
+
+.carousel-cell:hover {
+  opacity: 0.9;
+}
+
+.img1 {
+  background-image: url("/assets/images/imgVideoThumb.jpg") !important;
+}
+.img2 {
+  background-image: url("/assets/images/imgVideoThumb2.jpg") !important;
+}
+
+#play {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  cursor: pointer;
+  left: 44%;
+  bottom: 40%;
+  transition: 0.3s ease;
+}
+
+#play:hover {
+  font-size: 4rem;
+  bottom: 36%;
+  left: 42%;
+  color: rgb(255, 0, 0);
+}
+
+/*
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}/*
+
+/*----------------FOOTER BEGINS-------------------*/
+
 footer {
   font-size: calc(8px + 0.5vw);
   opacity: 0.7;
@@ -21,31 +78,4 @@ footer a {
 
 footer a:hover {
   opacity: 1 !important;
-}
-
-.carousel {
-  background: #eee;
-}
-
-.carousel-cell {
-  width: 28%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8c8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
-/*
-.carousel-cell.is-selected {
-  background: #ed2;
-}
- */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
 }

@@ -354,45 +354,52 @@
       </div>
 
       <!--------------------------------------------------------VIDEOS----------------------------------------------------------->
-
-      <div class="row justify-content-center ml-2 ml-sm-0 mr-2 mr-sm-0">
-        <div class="col-12 col-sm-6 embed-responsive embed-responsive-16by9">
-          <iframe
-            id="player"
-            class="embed-responsive-item"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Xb1TbZBPTzM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+      <div>
+        <h2 class="display-4">Featured Videos</h2>
+        <div class="row justify-content-center ml-2 ml-sm-0 mr-2 mr-sm-0">
+          <div class="col-12 col-sm-6 embed-responsive embed-responsive-16by9">
+            <iframe
+              id="player"
+              class="embed-responsive-item rounded"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-3Rk8Bvm8SI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-      </div>
-      <div class="row mt-2">
-        <div class="col-sm-12">
-          <div
-            class="carousel"
-            data-flickity='{ "groupCells": true, "freeScroll": true }'
-          >
+        <div class="row mt-2">
+          <div class="col-sm-12">
             <div
-              class="carousel-cell"
-              onClick="document.getElementById('player').src='https://www.youtube.com/embed/oSE-X912G2c'"
+              class="carousel"
+              data-flickity='{ "groupCells": true, "freeScroll": true }'
             >
-              <img src="http://img.youtube.com/vi/eg6kNoJmzkY/0.jpg" />
-            </div>
+              <div
+                class="carousel-cell img1"
+                onClick="document.getElementById('player').src='https://www.youtube.com/embed/-3Rk8Bvm8SI'"
+              >
+                <i class="fab fa-youtube" id="play"></i>
+              </div>
 
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
-            <div class="carousel-cell"></div>
+              <div
+                class="carousel-cell img2"
+                onClick="document.getElementById('player').src='https://www.youtube.com/embed/eE137SJ3LXE'"
+              >
+                <i class="fab fa-youtube" id="play"></i>
+              </div>
+              <div class="carousel-cell"></div>
+              <div class="carousel-cell"></div>
+              <div class="carousel-cell"></div>
+              <div class="carousel-cell"></div>
+              <div class="carousel-cell"></div>
+              <div class="carousel-cell"></div>
+              <div class="carousel-cell"></div>
+              <div class="carousel-cell"></div>
+              <div class="carousel-cell"></div>
+            </div>
           </div>
         </div>
       </div>
