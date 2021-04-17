@@ -18,7 +18,7 @@
     <meta name="author" content="Aniket Patra" />
 
     <!--og tags are for open graph-->
-    <meta property="og:title" content="JYS Foundation" />
+    <meta property="og:title" content="J.Y.S. Foundation" />
     <meta property="og:url" content="https://jysfoundation.github.io/" />
     <meta
       property="og:image"
@@ -27,7 +27,7 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="JYS Foundation Logo" />
+    <meta property="og:image:alt" content="J.Y.S. Foundation Logo" />
 
     <meta property="og:type" content="article" />
     <meta
@@ -40,7 +40,7 @@
 
     <!---------------TWITTER CRDS------------------------>
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="JYS Foundation" />
+    <meta name="twitter:title" content="J.Y.S. Foundation" />
     <meta
       name="twitter:description"
       content="Learn swimming, rowing and much more by acclaimed explorer Mr. Puspen Samanta"
@@ -51,7 +51,7 @@
       content="https://jysfoundation.github.io/assets/images/media_share.png"
     />
 
-    <title>JYS Foundation</title>
+    <title>Swimming | J.Y.S. Foundation</title>
 
     <!--For Bootstrap 4-->
     <link
@@ -62,7 +62,8 @@
     />
 
     <!--Page CSS-->
-    <link rel="stylesheet" href="/assets/main.css" />
+    <link rel="stylesheet" href="/assets/swimming/main.css" />
+    <link rel="stylesheet" href="/assets/common.css" />
 
     <!--Page Icon-->
     <link rel="icon" type="image/png" href="assets/images/icon.png" />
@@ -74,69 +75,77 @@
     ></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/index.html">JYS Foundation</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/index.html"
+        ><img
+          src="/assets/images/icon.png"
+          width="40"
+          height="40"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        J.Y.S. Foundation</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/aboutus.html" target="_blank"
-                >About Us</a
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus.html" target="_blank"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/swimming.html" target="_blank"
+                >Swimming<span class="sr-only">(current)</span></a
               >
-            </li>
-            <li class="nav-item dropdown active">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+              <a class="dropdown-item" href="/rowing.html" target="_blank"
+                >Rowing</a
               >
-                Events
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/swimming.html" target="_blank"
-                  >Swimming<span class="sr-only">(current)</span></a
-                >
-                <a class="dropdown-item" href="/rowing.html" target="_blank"
-                  >Rowing</a
-                >
-                <!--<div class="dropdown-divider"></div>-->
-                <a class="dropdown-item" href="/trainings.html" target="_blank"
-                  >Trainings</a
-                >
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html" target="_blank"
-                >Contact Us</a
+              <!--<div class="dropdown-divider"></div>-->
+              <a class="dropdown-item" href="/trainings.html" target="_blank"
+                >Trainings</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/donations.html" target="_blank"
-                >Donations</a
-              >
-            </li>
-          </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html" target="_blank"
+              >Contact Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/donations.html" target="_blank"
+              >Donations</a
+            >
+          </li>
+        </ul>
 
-          <!--<form class="form-inline my-2 my-lg-0">
+        <!--<form class="form-inline my-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
             type="search"
@@ -147,20 +156,161 @@
             Search
           </button>
         </form>-->
-        </div>
-      </nav>
-      <h1>Coming Soon</h1>
+      </div>
+    </nav>
+    <div class="container">
+      <hr class="stick ml-3 mt-1" />
+      <h1 class="subHeads ml-3 pt-2 pb-3">SWIMMING</h1>
       <!--------------------BREADCRUMBS---------------------------->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-          <li class="breadcrumb-item">Events</li>
-          <li class="breadcrumb-item active" aria-current="page">Swimming</li>
+          <li class="breadcrumb-item"><a href=" ">Events</a></li>
+          <li class="breadcrumb-item active text-dark" aria-current="page">
+            Swimming
+          </li>
         </ol>
       </nav>
-    </div>
-    </div>
+      <!---------------------------MAIN CONTENT---------------------------------------------->
+      <div class="row text-center">
+        <div class="col">
+          <blockquote class="blockquote font-italic">
+            <p>
+              "As per the National Crime Records Bureau-Accidental Deaths and
+              Suicides (2012), eighty persons die of drowning each day in India,
+              which accounts for 7.4% of all unnatural deaths. In 2013, there
+              were 29,456 deaths by drowning and 440 deaths due to malaria.""
+            </p>
+            <footer class="blockquote-footer">
+              Source <a rel="nofollow" href="https://bit.ly/3snGcI1">NCBI</a>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col">
+          <p class="para">
+            Swimming is fun. For some it is a way to find inner peace and to
+            some it is a magical way to stay fit. Whatever it may be, we must
+            acknowledge that it can sometimes save lives too. Often in news we
+            hear that someone died because of boat drowing or sometimes it is
+            because of mild loss of focus. Surprisingly, many of these cases are
+            mostly related to childrens. <br />This is why learning to swim
+            should be an integral part of our lives. Here at J.Y.S. Foundation,
+            you will find it much easier to learn swimming with our proven
+            methods.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="subHeads ml-2 pt-2 pb-3" style="font-size: calc(25px + 0.5vw)">
+        PROTECTION
+      </h3>
+      <div class="row">
+        <div class="col">
+          <figure>
+            <img
+              class="img-fluid img-thumbnail"
+              src="/assets/images/imgLifebuoy.jpg"
+              alt="An Orange Lifebuoy"
+              title="Photo by Call Me Fred on Unsplash"
+              style="max-height: 300px"
+            />
+          </figure>
+        </div>
+        <div class="col para">
+          <i>"Protection is better than cure."</i> We believe that life is
+          outmost precious and hence J.Y.S. Foundation have adequete amount of
+          lifebuoys! And not only lifebuoys, we also have sufficient
+          life-jackets ready to be used. We are the only one in this area to
+          provide such an extreme level of protection. So that you and your
+          family can have peace of mind, while you are in our water.
+        </div>
+      </div>
+
+      <h3 class="subHeads ml-2 pt-2 pb-3" style="font-size: calc(25px + 0.5vw)">
+        TECHNIQUES
+      </h3>
+      <div class="row">
+        <div class="col">
+          <figure>
+            <img
+              class="img-fluid img-thumbnail"
+              src="/assets/images/imgGender.jpg"
+              alt="Gender symbols on eggs"
+              title="Photo by Dainis Graveris on Unsplash"
+              style="max-height: 300px"
+            />
+          </figure>
+        </div>
+        <div class="col para">
+          <i
+            >"All I have to do is to work on transition and technique."<span
+              class="figure-caption"
+              >- Usain Bolt.
+            </span></i
+          >
+          Here at J.Y.S. Foundation, we have developed an amazing technique of
+          touchless teaching towards female candidates. Using this process
+          swimming tutor doesn't need to touch the female candidate. Apart from
+          that, our technique is so advanced that anyone can learn to swim
+          within one week!! and atmost it might take one month! Hence, with this
+          technique, you can be assured that any non-swimmer would learn to swim
+          within few weeks.
+        </div>
+      </div>
+
+      <h3 class="subHeads ml-2 pt-2 pb-3" style="font-size: calc(25px + 0.5vw)">
+        TECHNIQUES
+      </h3>
+      <div class="row">
+        <div class="col">
+          <figure>
+            <img
+              class="img-fluid img-thumbnail"
+              src="/assets/images/imgGender.jpg"
+              alt="Gender symbols on eggs"
+              title="Photo by Vitolda Klein on Unsplash, Photo by mxx on Unsplash"
+              style="max-height: 300px"
+            />
+          </figure>
+        </div>
+        <div class="col para">
+          <i
+            >"All I have to do is to work on transition and technique."<span
+              class="figure-caption"
+              >- Usain Bolt.
+            </span></i
+          >
+          Here at J.Y.S. Foundation, we have developed an amazing technique of
+          touchless teaching towards female candidates. Using this process
+          swimming tutor doesn't need to touch the female candidate. Apart from
+          that, our technique is so advanced that anyone can learn to swim
+          within one week!! and atmost it might take one month! Hence, with this
+          technique, you can be assured that any non-swimmer would learn to swim
+          within few weeks.
+        </div>
+      </div>
+
+      <!--------------------------------------------------------Footer------------------------------------------------------------>
+      <footer class="mt-5">
+        <p style="text-align: center">
+          <i class="far fa-copyright"></i> 2021 J.Y.S. Foundation | Made in
+          <img
+            src="https://aniket-patra.github.io/assets/india-16x16.png"
+            alt="India Logo"
+            height="16"
+            width="16"
+            title="India"
+          />
+          India by
+          <a href="https://aniket-patra.github.io/" target="_blank"
+            >Aniket Patra
+          </a>
+        </p>
+      </footer>
+    </div>
     <!--For Bootstrap 4-->
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"

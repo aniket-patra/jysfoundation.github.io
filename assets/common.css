@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"); /*For headings*/
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap"); /*Card headings*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap"); /*Card texts*/
+
+a {
+  text-decoration: none !important;
+  color: gray;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: black;
+}
+
+.stick {
+  width: 11rem;
+  margin: 0px;
+  border: none;
+  height: 6px;
+  background: rgb(155, 153, 153);
+}
+
+.subHeads {
+  font-size: calc(35px + 0.5vw);
+  font-family: "Nunito", sans-serif;
+}
+
+footer {
+  font-size: calc(8px + 0.5vw) !important;
+  opacity: 0.7;
+}
+
+footer a {
+  text-decoration: none !important;
+  opacity: 0.7;
+  color: black !important;
+}
+
+footer a:hover {
+  opacity: 1 !important;
+}
