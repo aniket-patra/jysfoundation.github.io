@@ -18,16 +18,16 @@
     <meta name="author" content="Aniket Patra" />
 
     <!--og tags are for open graph-->
-    <meta property="og:title" content="JYS Foundation" />
+    <meta property="og:title" content="J.Y.S. Foundation" />
     <meta property="og:url" content="https://jysfoundation.github.io/" />
     <meta
       property="og:image"
-      content="https://jysfoundation.github.io/assets/images/media_share.png"
+      content="https://jysfoundation.github.io/assets/images/media_share.jpg"
     />
-    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:type" content="image/jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="JYS Foundation Logo" />
+    <meta property="og:image:alt" content="J.Y.S. Foundation Logo" />
 
     <meta property="og:type" content="article" />
     <meta
@@ -38,9 +38,9 @@
     <meta property="og:locale" content="en_IN" />
     <meta property="og:locale:alternate" content="en_US" />
 
-    <!---------------TWITTER CRDS------------------------>
+    <!---------------TWITTER CARDS------------------------>
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="JYS Foundation" />
+    <meta name="twitter:title" content="J.Y.S. Foundation" />
     <meta
       name="twitter:description"
       content="Learn swimming, rowing and much more by acclaimed explorer Mr. Puspen Samanta"
@@ -48,10 +48,10 @@
     <meta name="twitter:url" content="https://jysfoundation.github.io/" />
     <meta
       name="twitter:image"
-      content="https://jysfoundation.github.io/assets/images/media_share.png"
+      content="https://jysfoundation.github.io/assets/images/media_share.jpg"
     />
 
-    <title>JYS Foundation</title>
+    <title>About Us | J.Y.S. Foundation</title>
 
     <!--For Bootstrap 4-->
     <link
@@ -64,6 +64,8 @@
     <!--Page CSS-->
     <link rel="stylesheet" href="/assets/main.css" />
 
+    <link rel="stylesheet" href="/assets/common.css" />
+
     <!--Page Icon-->
     <link rel="icon" type="image/png" href="assets/images/icon.png" />
 
@@ -74,69 +76,76 @@
     ></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/index.html">JYS Foundation</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/index.html"
+        ><img
+          src="/assets/images/icon.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        /> J.Y.S. Foundation</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/aboutus.html" target="_blank"
-                >About Us<span class="sr-only">(current)</span></a
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/aboutus.html" target="_blank"
+              >About Us<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/swimming.html" target="_blank"
+                >Swimming</a
               >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+              <a class="dropdown-item" href="/rowing.html" target="_blank"
+                >Rowing</a
               >
-                Events
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/swimming.html" target="_blank"
-                  >Swimming</a
-                >
-                <a class="dropdown-item" href="/rowing.html" target="_blank"
-                  >Rowing</a
-                >
-                <!--<div class="dropdown-divider"></div>-->
-                <a class="dropdown-item" href="/trainings.html" target="_blank"
-                  >Trainings</a
-                >
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html" target="_blank"
-                >Contact Us</a
+              <!--<div class="dropdown-divider"></div>-->
+              <a class="dropdown-item" href="/trainings.html" target="_blank"
+                >Trainings</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/donations.html" target="_blank"
-                >Donations</a
-              >
-            </li>
-          </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html" target="_blank"
+              >Contact Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/donations.html" target="_blank"
+              >Donations</a
+            >
+          </li>
+        </ul>
 
-          <!--<form class="form-inline my-2 my-lg-0">
+        <!--<form class="form-inline my-2 my-lg-0">
             <input
               class="form-control mr-sm-2"
               type="search"
@@ -147,10 +156,44 @@
               Search
             </button>
           </form>-->
-        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <hr class="stick ml-3 mt-3" />
+      <h1 class="subHeads ml-3 pt-2 pb-3">ABOUT US</h1>
+      <!--------------------BREADCRUMBS---------------------------->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+
+          <li class="breadcrumb-item active" aria-current="page">
+            <a style="color: black" href="/aboutus.html">About Us</a>
+          </li>
+        </ol>
       </nav>
-      <h1>Coming Soon</h1>
-      
+
+      <!-----------------------MAIN CONTENT------------------------->
+      <h3 style="text-align: center">CONTENTS COMING SOON</h3>
+      <!--------------------------------------FOOTER----------------------------------------->
+      <footer class="pt-4">
+        <p style="text-align: center ;position: fixed; left: 0; bottom: 0; width: 100%"">
+          <i class="far fa-copyright"></i> 2021 J.Y.S. Foundation | Made in
+          <img
+            src="https://aniket-patra.github.io/assets/india-16x16.png"
+            alt="India Logo"
+            height="16"
+            width="16"
+          />
+          India by
+          <a
+            href="https://aniket-patra.github.io/"
+            target="_blank"
+            id="foot_name"
+            >Aniket Patra
+          </a>
+        </p>
+      </footer>
+    </div>
 
     <!--For Bootstrap 4-->
     <script
