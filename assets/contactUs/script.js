@@ -1,10 +1,4 @@
-const form = document.getElementById('form');
-
-form.onsubmit = submit;
-
-function submit(event) {
-    postSubmit();
-  }
+ 
 
   function nameCopy()
 {  
@@ -14,8 +8,20 @@ function submit(event) {
     localStorage.setItem('userName',name);    
 }
 
+var i = 0;
+      function makeProgress() {
+        if (i < 100) {
+          i = i + 1;
+          $(".progress-bar")
+            .css("width", i + "%")
+            .text(i + " %");
+        }
+        // Wait for sometime before running this script again
+        setTimeout("makeProgress()", 400);
+      }
+
 function postSubmit()
 {
-    document.getElementById("submit").disabled=true
-    document.getElementById('spinnerSubmit').style.visibility="visible";
+    document.getElementById("submit").disabled=true;     
+    makeProgress();  
 }

@@ -191,7 +191,7 @@
       <!------------------------MAIN CONTENT FORM------------------------>
 
       <form
-        id="form"
+        onsubmit="postSubmit()"
         class="pt-3 card-body"
         action="https://submit-form.com/YiqRMeJ5"
         accept-charset="UTF-8"
@@ -269,12 +269,20 @@
         />
 
         <input type="reset" class="btn btn-outline-danger" /> <br /><br />
-        <div
+        <!--<div
           id="spinnerSubmit"
           class="spinner-border text-secondary ml-4"
           role="status"
           style="visibility: hidden"
-        ></div>
+        ></div>-->
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            role="progressbar"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
       </form>
 
       <!-----------------------------------------------------MAP------------------------------------------------------->
