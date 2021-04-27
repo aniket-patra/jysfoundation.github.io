@@ -51,7 +51,7 @@
       content="https://jysfoundation.github.io/assets/images/media_share.jpg"
     />
 
-    <title>About Us | J.Y.S. Foundation</title>
+    <title>Gallery | J.Y.S. Foundation</title>
 
     <!--For Bootstrap 4-->
     <link
@@ -62,7 +62,7 @@
     />
 
     <!--Page CSS-->
-    <link rel="stylesheet" href="/assets/aboutus/main.css" />
+    <link rel="stylesheet" href="/assets/gallery/main.css" />
 
     <link rel="stylesheet" href="/assets/common.css" />
 
@@ -104,9 +104,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/index.html">Home </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/aboutus.html" target="_blank"
-              >About Us<span class="sr-only">(current)</span></a
+              >About Us</a
             >
           </li>
           <li class="nav-item dropdown">
@@ -134,8 +134,10 @@
               >
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/gallery.html" target="_blank">Gallery</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="/gallery.html" target="_blank"
+              >Gallery <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact.html" target="_blank"
@@ -164,31 +166,42 @@
     </nav>
     <div class="container">
       <hr class="stick ml-3 mt-3" />
-      <h1 class="subHeads ml-3 pt-2 pb-3">ABOUT US</h1>
+      <h1 class="subHeads ml-3 pt-2 pb-3">GALLERY</h1>
       <!--------------------BREADCRUMBS---------------------------->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
 
           <li class="breadcrumb-item active" aria-current="page">
-            <a style="color: black" href="/aboutus.html">About Us</a>
+            <a style="color: black" href="/aboutus.html">Gallery</a>
           </li>
         </ol>
       </nav>
+      <!----------------------------------------IFRAME------------------------------------>
+      <div class="row d-sm-block d-none">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            class="embed-responsive-item"
+            src="/assets/images/galleryImg.jpg"
+            name="imgbox"
+          >
+            <p>iframes are not supported by your browser.</p>
+          </iframe>
+        </div>
+      </div>
 
-      <!-----------------------MAIN CONTENT------------------------->
-      <h3 style="text-align: center" class="mb-4"><u>J.Y.S. FOUNDATION</u></h3>
+      <!-------------------------------------IMAGES--------------------------------------------->
 
-      <!-----------------------IMAGE SECTION------------------------------>
       <div class="row">
         <div class="col-sm-3 col-6">
           <figure class="figure">
-            <img
-              src="/assets/images/aboutus_img1.jpg"
-              alt="People standing in a water body with protective equipments"
-              class="figure-img img-fluid rounded img-thumbnail"
-              title="Jagacha Swimming Centre"
-            />
+            <a href="/assets/images/aboutus_img1.jpg" target="imgbox"
+              ><img
+                src="/assets/images/aboutus_img1.jpg"
+                alt="People standing in a water body with protective equipments"
+                class="figure-img img-fluid rounded img-thumbnail"
+                title="Jagacha Swimming Centre"
+            /></a>
 
             <figcaption class="text-center d-sm-block d-none">
               Jagacha swimming centre
@@ -242,116 +255,6 @@
           </figure>
         </div>
       </div>
-
-      <!--------------------------------THE WRITEUP---------------------------------->
-      <div class="row">
-        <div class="col">
-          <p class="text-justify">
-            Jagacha Yuva Shakti Foundation (Jagacha Youth Empowerment
-            Foundation) was established in 2011. This organization always had
-            and will be having focuse on various types of work, which is not
-            just limited to expeditions. River to sea kayak expedition was first
-            developed to travel from Kolkata to Balasore and its motto was to
-            minimize river pollution. Not to mention, this was the first time in
-            India. This organization has organized India's first empty plastic
-            bottle boat expedition from Mayapur to Kolkata in 2015. The motto of
-            this expedition was to reduce reuse recycle (3 R's). Then again this
-            organization organized an empty plastic bottle kayak boat expedition
-            from New Digha to Kolkata in 2016. Also, proudly this organization
-            organized the world's first Hogla leaf's boat expedition from
-            Hazarduari in Murshidabad to Kolkata in the year 2017. And again the
-            organization blossomed as the world's first creator of the Jute
-            stick boat expedition, from Haldia to Kolkata in 2018. Now this
-            organization is focusing on global warming and river pollution.
-            <br />
-            <br />
-            Our work isn't finished yet! This section is going to be full of
-            upcoming <i>services to the environment and nation</i>.
-          </p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <a href="/gallery.html" class="btn btn-dark disabled" target="_blank"
-          >Gallery</a
-        >
-      </div>
-
-      <!-------------------------------OUR TEAM---------------------------------------->
-      <hr class="stick mt-3" />
-      <h2 class="subHeads pt-2 pb-3">OUR TEAM</h2>
-      <div class="row">
-        <div class="col-sm-3 col-6 mt-sm-1 mt-3">
-          <div class="card">
-            <img
-              src="/assets/images/dummy.png"
-              class="card-img-top"
-              alt="Man swimming on body of water"
-              title="Photo by Todd Quackenbush on Unsplash"
-            />
-            <div class="card-body">
-              <h5 class="card-title">PUSPEN SAMANTA</h5>
-              <p class="card-text d-sm-block d-none">Director</p>
-              <a href="#" class="btn btn-primary" target="_blank">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-6 mt-sm-1 mt-3">
-          <div class="card">
-            <img
-              src="/assets/images/ourTeam_KK.jpg"
-              class="card-img-top"
-              alt="Woman looking at the trees while riding on Kayak"
-              title="Photo by Viktor Jakovlev on Unsplash"
-            />
-            <div class="card-body">
-              <h5 class="card-title">KAUSTAV KHANRA</h5>
-              <p class="card-text d-sm-block d-none">Manager</p>
-              <a
-                href="https://www.instagram.com/kaustav_khanra/"
-                class="btn btn-primary"
-                target="_blank"
-                >Learn More</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-6 mt-sm-1 mt-3">
-          <div class="card">
-            <img
-              src="/assets/images/dummy.png"
-              class="card-img-top"
-              alt="white and black dice over green textile"
-              title="Photo by Miles Burke on Unsplash"
-            />
-            <div class="card-body">
-              <h5 class="card-title">RAHUL BARUA</h5>
-              <p class="card-text d-sm-block d-none">Manager</p>
-              <a href="#" class="btn btn-primary" target="_blank">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-6 mt-sm-1 mt-3">
-          <div class="card">
-            <img
-              src="/assets/images/ourTeam_AP.jpeg"
-              class="card-img-top"
-              alt="white and black dice over green textile"
-              title="Photo by Miles Burke on Unsplash"
-            />
-            <div class="card-body">
-              <h5 class="card-title">ANIKET PATRA</h5>
-              <p class="card-text d-sm-block d-none">Developer & Manager</p>
-              <a
-                href="https://aniket-patra.github.io/"
-                class="btn btn-primary"
-                target="_blank"
-                >Learn More</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!--------------------------------------FOOTER----------------------------------------->
       <footer class="pt-4">
         <p style="text-align: center">
@@ -386,6 +289,6 @@
     ></script>
 
     <!--Page JS-->
-    <script src="/assets/aboutus/script.js"></script>
+    <script src="/assets/gallery/script.js"></script>
   </body>
 </html>
