@@ -38,7 +38,7 @@
     <meta property="og:locale" content="en_IN" />
     <meta property="og:locale:alternate" content="en_US" />
 
-    <!---------------TWITTER CRDS------------------------>
+    <!---------------TWITTER CARDS------------------------>
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="J.Y.S. Foundation" />
     <meta
@@ -51,7 +51,7 @@
       content="https://jysfoundation.github.io/assets/images/media_share.jpg"
     />
 
-    <title>Contact | J.Y.S. Foundation</title>
+    <title>COVID-19</title>
 
     <!--For Bootstrap 4-->
     <link
@@ -62,7 +62,8 @@
     />
 
     <!--Page CSS-->
-    <link rel="stylesheet" href="/assets/contactUs/main.css" />
+    <link rel="stylesheet" href="/assets/aboutus/main.css" />
+
     <link rel="stylesheet" href="/assets/common.css" />
 
     <!--Page Icon-->
@@ -73,25 +74,8 @@
       src="https://kit.fontawesome.com/2da650b498.js"
       crossorigin="anonymous"
     ></script>
-    <!--------------BOTPOISON------------>
-    <script src="https://unpkg.com/@botpoison/browser"></script>
-
-    <!--------------intl-tel-input---------->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css"
-      integrity="sha512-yye/u0ehQsrVrfSd6biT17t39Rg9kNc+vENcCXZuMz2a+LWFGvXUnYuWUW6pbfYj1jcBb/C39UZw2ciQvwDDvg=="
-      crossorigin="anonymous"
-    />
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"
-      integrity="sha512-OnkjbJ4TwPpgSmjXACCb5J4cJwi880VRe+vWpPDlr8M38/L3slN5uUAeOeWU2jN+4vN0gImCXFGdJmc0wO4Mig=="
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <!------------------------------------------------------------Navigation------------------------------->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="/index.html"
         ><img
@@ -153,9 +137,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/gallery.html" target="_blank">Gallery</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/contact.html" target="_blank"
-              >Contact Us <span class="sr-only">(current)</span></a
+              >Contact Us</a
             >
           </li>
           <li class="nav-item">
@@ -163,147 +147,81 @@
               >Donations</a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/covid.html" target="_blank">COVID-19</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="/covid.html" target="_blank"
+              >COVID-19<span class="sr-only">(current)</span></a
+            >
           </li>
         </ul>
 
         <!--<form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>-->
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>-->
       </div>
     </nav>
     <div class="container">
       <hr class="stick ml-3 mt-3" />
-      <h3 class="subHeads ml-3 pt-2 pb-3">CONTACT US</h3>
+      <h1 class="subHeads ml-3 pt-2 pb-3">COVID-19</h1>
       <!--------------------BREADCRUMBS---------------------------->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
 
           <li class="breadcrumb-item active" aria-current="page">
-            <a style="color: black" href="/contact.html">Contact Us</a>
+            <a style="color: black" href="/covid.html">COVID-19</a>
           </li>
         </ol>
       </nav>
-      <!------------------------MAIN CONTENT FORM------------------------>
 
-      <form
-        onsubmit="postSubmit()"
-        class="pt-3 card-body"
-        action="https://submit-form.com/YiqRMeJ5"
-        accept-charset="UTF-8"
-        data-botpoison-public-key="pk_1d67d912-da16-48fc-8cc2-5e2061492169"
-        method="POST"
-      >
-        <div class="form-row">
-          <div class="col">
-            <label for="form_name">Name </label>
-            <input
-              type="text"
-              id="form_name"
-              name="Name"
-              class="form-control"
-              placeholder="Your name"
-              required
-            />
+      <!-----------------------MAIN CONTENT------------------------->
+      <div class="alert alert-secondary" role="alert">
+        <h4 class="alert-heading">
+          Updates
+          <span class="font-weight-light h6"
+            >(Total: <span class="totalCases">Error</span>)</span
+          >
+        </h4>
+        <div class="row">
+          <div class="col-sm-4">
+            <p>
+              Active Cases: <span class="activeCases text-primary">Error</span>
+            </p>
+            <p>
+              Active Cases (New):
+              <span class="activeCasesNew text-warning">Error</span>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>Recovered: <span class="recovered text-success">Error</span></p>
+            <p>
+              Recovered (New):
+              <span class="recoveredNew text-success">Error</span>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>Deaths: <span class="deaths text-danger">Error</span></p>
+            <p>
+              Deaths (New): <span class="deathsNew text-danger">Error</span>
+            </p>
           </div>
         </div>
-        <div class="form-group">
-          <label for="inputEmail1">Email address </label>
-          <input
-            type="email"
-            name="Mail"
-            class="form-control"
-            id="inputEmail1"
-            placeholder="Your email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            required
-          />
-
-          <label for="inputPhone">Phone </label>
-          <input
-            type="tel"
-            name="Phone"
-            class="form-control"
-            id="inputPhone"
-            placeholder="Your phone number [Optional]"
-          />
-
-          <label for="message">Message </label>
-          <textarea
-            class="form-control"
-            id="message"
-            name="Message"
-            maxlength="140"
-            rows="3"
-            placeholder="And your message :)"
-            required
-          ></textarea>
-        </div>
-
-        <!--Simple Spam protection
-          <input
-          type="checkbox"
-          name="_honeypot"
-          style="display: none"
-          tabindex="-1"
-          autocomplete="off"
-        />-->
-        <input
-          type="hidden"
-          name="_redirect"
-          value="https://jysfoundation.github.io/thankyou"
-        />
-        <input type="hidden" id="nameFiller" name="_email.from" />
-        <input type="hidden" id="subjectSetter" name="_email.subject" />
-        <input type="hidden" name="_append" value="false" />
-        <input
-          id="submit"
-          onclick="nameCopy()"
-          type="submit"
-          class="btn btn-outline-secondary"
-        />
-
-        <input type="reset" class="btn btn-outline-danger" /> <br /><br />
-        <!--<div
-          id="spinnerSubmit"
-          class="spinner-border text-secondary ml-4"
-          role="status"
-          style="visibility: hidden"
-        ></div>-->
-        <div class="progress">
-          <div
-            class="progress-bar progress-bar-striped progress-bar-animated"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          ></div>
-        </div>
-      </form>
-
-      <!-----------------------------------------------------MAP------------------------------------------------------->
-      <hr class="stick ml-3" />
-      <h3 class="subHeads ml-3 pt-2 pb-3">FIND US ON GOOGLE MAP</h3>
-      <div class="row pt-3 ml-sm-0 ml-1 mr-sm-0 mr-1">
-        <div class="col embed-responsive embed-responsive-16by9">
-          <iframe
-            class="embed-responsive-item"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.3046276536734!2d88.28288200014217!3d22.59158404826854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x30cd5d3cf9ebe585!2sJ.Y.S.%20Foundation!5e0!3m2!1sen!2sin!4v1618116625530!5m2!1sen!2sin"
-            width="300"
-            height="225"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+        <hr />
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="mb-0">Source: <span class="source"></span></p>
+          </div>
+          <div class="col-sm-6">
+            Last Update:
+            <span class="updateTime text-white bg-dark">Error</span>
+          </div>
         </div>
       </div>
 
@@ -330,8 +248,8 @@
 
     <!--For Bootstrap 4-->
     <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
     <script
@@ -341,6 +259,36 @@
     ></script>
 
     <!--Page JS-->
-    <script src="/assets/contactUs/script.js"></script>
+
+    <script>
+      $.getJSON(
+        "https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true",
+        function (data) {
+          var date = `${data.lastUpdatedAtApify}`;
+          var d = new Date(date);
+          var resultTime = d.toLocaleString();
+
+          var activeCases = `${data.activeCases}`;
+          var activeCasesNew = `${data.activeCasesNew}`;
+          var recovered = `${data.recovered}`;
+          var recoveredNew = `${data.recoveredNew}`;
+          var deaths = `${data.deaths}`;
+          var deathsNew = `${data.deathsNew}`;
+          var totalCases = `${data.totalCases}`;
+
+          var source = `<a href="${data.sourceUrl}" target="_blank">${data.sourceUrl}</a>`;
+
+          $(".totalCases").html(totalCases);
+          $(".activeCases").html(activeCases);
+          $(".activeCasesNew").html(activeCasesNew);
+          $(".recovered").html(recovered);
+          $(".recoveredNew").html(recoveredNew);
+          $(".deaths").html(deaths);
+          $(".deathsNew").html(deathsNew);
+          $(".updateTime").html(resultTime);
+          $(".source").html(source);
+        }
+      );
+    </script>
   </body>
 </html>
