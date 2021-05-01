@@ -185,6 +185,12 @@
       <div class="alert alert-secondary" role="alert">
         <h4 class="alert-heading">
           Updates
+          <img
+            src="https://aniket-patra.github.io/assets/india-16x16.png"
+            alt="India Logo"
+            height="20"
+            width="20"
+          />
           <span class="font-weight-light h6"
             >(Total: <span class="totalCases">Error</span>)</span
           >
@@ -210,6 +216,55 @@
             <p>Deaths: <span class="deaths text-danger">Error</span></p>
             <p>
               Deaths (New): <span class="deathsNew text-danger">Error</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-secondary" role="alert">
+        <h4 class="alert-heading">State</h4>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle stateButton"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Select
+          </button>
+          <div
+            class="dropdown-menu stateMenu overflow-auto"
+            style="width: auto; max-height: 197px"
+            aria-labelledby="dropdownMenuButton"
+          >
+            Error
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <p>
+              Active Cases:
+              <span class="activeCasesState text-primary">0</span>
+            </p>
+            <p>
+              Active Cases (New):
+              <span class="activeCasesNewState text-warning">0</span>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>Recovered: <span class="recoveredState text-success">0</span></p>
+            <p>
+              Recovered (New):
+              <span class="recoveredNewState text-success">0</span>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>Deaths: <span class="deathsState text-danger">0</span></p>
+            <p>
+              Deaths (New):
+              <span class="deathsNewState text-danger">0</span>
             </p>
           </div>
         </div>
@@ -287,8 +342,17 @@
           $(".deathsNew").html(deathsNew);
           $(".updateTime").html(resultTime);
           $(".source").html(source);
+
+          var stateMenu = ``;
+          $.each(data.regionData, function (index) {
+            stateMenu =
+              stateMenu +
+              `<a class="dropdown-item" onclick="myFunc(this);">${data.regionData[index].region}</a>`;
+          });
+          $(".stateMenu").html(stateMenu);
         }
       );
     </script>
+    <script src="/assets/covid/script.js"></script>
   </body>
 </html>
